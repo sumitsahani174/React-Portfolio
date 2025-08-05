@@ -27,17 +27,19 @@ const About = () => {
 
   const skills = [
     { label: '.NET Core', color: 'primary' },
+    { label: 'Node JS', color: 'primary' },
+    { label: 'Redis Cache', color: 'secondary' },
     { label: 'React.js', color: 'secondary' },
     { label: 'Healthcare', color: 'success' },
     { label: 'Insurance', color: 'info' },
-    { label: 'Cloud-Native', color: 'warning' },
+    { label: 'System Design ', color: 'warning' },
     { label: 'Agile', color: 'error' }
   ];
 
   const highlights = [
     {
       icon: <CodeIcon sx={{ fontSize: 40 }} />,
-      title: '5+ Years',
+      title: '6+ Years',
       subtitle: 'Development Experience'
     },
     {
@@ -48,7 +50,7 @@ const About = () => {
     {
       icon: <SpeedIcon sx={{ fontSize: 40 }} />,
       title: 'Scalable',
-      subtitle: 'Web Applications'
+      subtitle: 'Applications'
     },
     {
       icon: <GroupIcon sx={{ fontSize: 40 }} />,
@@ -172,11 +174,7 @@ const About = () => {
                   textAlign: { xs: 'center', sm: 'left' }
                 }}
               >
-                Motivated Full-Stack Developer with 5+ years of experience in developing 
-                scalable web applications and APIs using .NET Core and React.js. Proven 
-                expertise in healthcare and insurance domains, cloud-native development, 
-                and Agile methodologies. Passionate about delivering high-quality solutions 
-                that drive business growth and enhance user experiences.
+                Versatile Full Stack Developer with 6+ years of experience, specializing in .NET Core, Node.js, and React.js for building robust, scalable web applications and RESTful APIs. Proven track record in delivering solutions across healthcare and insurance domains, with strong knowledge of microservices architecture, cloud-native development, and Agile methodologies. Highly adaptable and open to learning new technologies, with a passion for solving complex problems and taking on new challenges in dynamic environments. Committed to writing clean, maintainable code and delivering high-quality products that drive business value.
               </Typography>
 
               <Box sx={{ mb: 4 }}>
