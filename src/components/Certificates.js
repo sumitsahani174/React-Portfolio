@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Container,
@@ -16,20 +16,20 @@ import {
   DialogTitle,
   IconButton,
   Button,
-  Stack
-} from '@mui/material';
-import { 
-  Award, 
-  Calendar, 
-  Eye, 
-  ExternalLink, 
+  Stack,
+} from "@mui/material";
+import {
+  Award,
+  Calendar,
+  Eye,
+  ExternalLink,
   Star,
   Sparkles,
   Trophy,
   BadgeCheck,
   Download,
-  X
-} from 'lucide-react';
+  X,
+} from "lucide-react";
 
 const Certificates = () => {
   const theme = useTheme();
@@ -46,44 +46,48 @@ const Certificates = () => {
   const certificates = [
     {
       id: 1,
-      title: 'Learn How to Design Seamless Notification Services',
-      issuer: 'Scaler Academy',
-      date: 'June 2025',
-      description: '🚀 Completed the Scaler Masterclass on "Learn How to Design Seamless Notification Services" held on 24th June 2025! It was a great session to dive deeper into designing reliable and scalable notification architectures. Big thanks to Scaler and Pragy Agarwal for the insightful session and guidance. 📈 Always excited to learn, grow, and build better systems',
-      category: 'System Designing',
+      title: "Learn How to Design Seamless Notification Services",
+      issuer: "Scaler Academy",
+      date: "June 2025",
+      description:
+        '🚀 Completed the Scaler Masterclass on "Learn How to Design Seamless Notification Services" held on 24th June 2025! It was a great session to dive deeper into designing reliable and scalable notification architectures. Big thanks to Scaler and Pragy Agarwal for the insightful session and guidance. 📈 Always excited to learn, grow, and build better systems',
+      category: "System Designing",
       image: `${process.env.PUBLIC_URL}/certificate/ScalerCertificate.jpeg`, // Replace with your actual image path
       //credentialId: 'META-REACT-2023-001',
-      skills: ['System Design'],
+      skills: ["System Design"],
       // verificationUrl: 'https://coursera.org/verify/your-credential',
-      color: '#61dafb'
-    }
-    // ,
-    // {
-    //   id: 2,
-    //   title: 'AWS Cloud Practitioner',
-    //   issuer: 'Amazon Web Services',
-    //   date: 'October 2023',
-    //   description: 'Foundation-level certification demonstrating cloud fluency and foundational AWS knowledge.',
-    //   category: 'Cloud Computing',
-    //   image: '/certificate/aws-cert.jpg', // Replace with your actual image path
-    //   credentialId: 'AWS-CP-2023-456',
-    //   skills: ['AWS', 'Cloud Computing', 'EC2', 'S3'],
-    //   verificationUrl: 'https://aws.amazon.com/verification/your-credential',
-    //   color: '#ff9900'
-    // },
-    // {
-    //   id: 3,
-    //   title: 'JavaScript Algorithms and Data Structures',
-    //   issuer: 'freeCodeCamp',
-    //   date: 'August 2023',
-    //   description: 'Certificate covering fundamental JavaScript concepts, algorithms, and data structure implementations.',
-    //   category: 'Programming',
-    //   image: '/certificate/javascript-cert.jpg', // Replace with your actual image path
-    //   credentialId: 'FCC-JS-2023-789',
-    //   skills: ['JavaScript', 'Algorithms', 'Data Structures', 'Problem Solving'],
-    //   verificationUrl: 'https://freecodecamp.org/certification/your-username/javascript',
-    //   color: '#f7df1e'
-    // },
+      color: "#61dafb",
+    },
+    {
+      id: 2,
+      title: "AI Tools Workshop",
+      issuer: "be10X",
+      date: "June 2025",
+      description:
+        "🚀 Attended the Be10x AI Tools Workshop — and it’s been an absolute game changer! 💡 In just a short span, I explored practical AI tools that can supercharge productivity, automate repetitive tasks, and help make smarter decisions faster. From content creation to coding support, the possibilities with AI are limitless — and this workshop opened my eyes to what’s truly possible.🔍 Key Takeaways: How to integrate AI into my daily workflow Tools to enhance creativity and problem-solving. Real-world use cases for business and tech professionalsFoundation-level certification demonstrating cloud fluency and foundational AWS knowledge.",
+      category: "AI Tools",
+      image: `${process.env.PUBLIC_URL}/certificate/be10x Certificate.png`, // Replace with your actual image path
+      credentialId: "0270772f-3809-4400-b29b-1e1c61cd0997464276",
+      skills: ["AI Tools", "Productivity", "Automation"],
+      verificationUrl:
+        "https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd0997464276",
+      color: "#ff9900",
+    },
+    {
+      id: 3,
+      title: "SQL Using AI Workshop",
+      issuer: "AI For Techies",
+      date: "July 2025",
+      description:
+        '🚀 Excited to share! Completed the "SQL Using AI" Workshop by AI For Techies. It was a compact yet powerful 3-hour session focused on leveraging SQL for data analysis and automation using AI tools.',
+      category: "AI and SQL",
+      image: `${process.env.PUBLIC_URL}/certificate/AIForTechiesSQLQorkshop.png`, // Replace with your actual image path
+      credentialId: "a3ae0c0d-1f62-4e3f-bede-17ff37c364a7485967",
+      skills: ["AI", "SQL", "Data Analysis"],
+      verificationUrl:
+        "https://certx.in/certificate/a3ae0c0d-1f62-4e3f-bede-17ff37c364a7485967",
+      color: "#f7df1e",
+    },
     // {
     //   id: 4,
     //   title: 'Google UX Design Certificate',
@@ -127,23 +131,23 @@ const Certificates = () => {
 
   const LucideIcon = ({ IconComponent, color, size = 24, ...props }) => {
     if (!IconComponent) return null;
-    
+
     return (
       <Box
         component="span"
         sx={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          justifyContent: 'center',
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
           color: color || theme.palette.primary.main,
-          '& svg': {
+          "& svg": {
             width: size,
             height: size,
           },
-          ...props.sx
+          ...props.sx,
         }}
       >
-        <IconComponent size={size} style={{ color: color || 'currentColor' }} />
+        <IconComponent size={size} style={{ color: color || "currentColor" }} />
       </Box>
     );
   };
@@ -158,20 +162,19 @@ const Certificates = () => {
     setSelectedCertificate(null);
   };
 
-  const getCategoryIcon = (category) => 
-    {
+  const getCategoryIcon = (category) => {
     switch (category.toLowerCase()) {
-      case 'web development':
+      case "web development":
         return Trophy;
-      case 'cloud computing':
+      case "cloud computing":
         return BadgeCheck;
-      case 'programming':
+      case "programming":
         return Award;
-      case 'design':
+      case "design":
         return Star;
-      case 'database':
+      case "database":
         return Trophy;
-      case 'devops':
+      case "devops":
         return BadgeCheck;
       default:
         return Award;
@@ -180,18 +183,18 @@ const Certificates = () => {
 
   const getCategoryColor = (category) => {
     switch (category.toLowerCase()) {
-      case 'web development':
-        return '#61dafb';
-      case 'cloud computing':
-        return '#ff9900';
-      case 'programming':
-        return '#f7df1e';
-      case 'design':
-        return '#4285f4';
-      case 'database':
-        return '#47a248';
-      case 'devops':
-        return '#2496ed';
+      case "web development":
+        return "#61dafb";
+      case "cloud computing":
+        return "#ff9900";
+      case "programming":
+        return "#f7df1e";
+      case "design":
+        return "#4285f4";
+      case "database":
+        return "#47a248";
+      case "devops":
+        return "#2496ed";
       default:
         return theme.palette.primary.main;
     }
@@ -203,30 +206,38 @@ const Certificates = () => {
       sx={{
         py: { xs: 8, md: 12 },
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.grey[50]} 50%, ${theme.palette.background.default} 100%)`,
-        position: 'relative',
-        overflow: 'hidden',
-        '&::before': {
+        position: "relative",
+        overflow: "hidden",
+        "&::before": {
           content: '""',
-          position: 'absolute',
+          position: "absolute",
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'radial-gradient(circle at 20% 30%, rgba(255, 193, 7, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(76, 175, 80, 0.08) 0%, transparent 50%)',
-          pointerEvents: 'none'
-        }
+          background:
+            "radial-gradient(circle at 20% 30%, rgba(255, 193, 7, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(76, 175, 80, 0.08) 0%, transparent 50%)",
+          pointerEvents: "none",
+        },
       }}
     >
       <Container maxWidth="lg">
         {/* Header */}
         <Fade in={isVisible} timeout={1000}>
-          <Box sx={{ textAlign: 'center', mb: 8 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 2 }}>
-              <LucideIcon 
-                IconComponent={Trophy} 
+          <Box sx={{ textAlign: "center", mb: 8 }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                mb: 2,
+              }}
+            >
+              <LucideIcon
+                IconComponent={Trophy}
                 color={theme.palette.warning.main}
                 size={32}
-                sx={{ mr: 2, animation: 'pulse 2s infinite' }}
+                sx={{ mr: 2, animation: "pulse 2s infinite" }}
               />
               <Typography
                 variant="h3"
@@ -234,19 +245,19 @@ const Certificates = () => {
                 sx={{
                   fontWeight: 800,
                   background: `linear-gradient(45deg, ${theme.palette.warning.main}, ${theme.palette.success.main})`,
-                  backgroundClip: 'text',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  fontSize: { xs: '2.5rem', md: '3.5rem' }
+                  backgroundClip: "text",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontSize: { xs: "2.5rem", md: "3.5rem" },
                 }}
               >
                 Certifications & Achievements
               </Typography>
-              <LucideIcon 
-                IconComponent={Sparkles} 
+              <LucideIcon
+                IconComponent={Sparkles}
                 color={theme.palette.success.main}
                 size={32}
-                sx={{ ml: 2, animation: 'pulse 2s infinite 0.5s' }}
+                sx={{ ml: 2, animation: "pulse 2s infinite 0.5s" }}
               />
             </Box>
             <Divider
@@ -255,8 +266,8 @@ const Certificates = () => {
                 height: 4,
                 background: `linear-gradient(90deg, ${theme.palette.warning.main}, ${theme.palette.success.main})`,
                 borderRadius: 2,
-                mx: 'auto',
-                my: 3
+                mx: "auto",
+                my: 3,
               }}
             />
             <Typography
@@ -264,12 +275,13 @@ const Certificates = () => {
               sx={{
                 color: theme.palette.text.secondary,
                 fontWeight: 400,
-                fontSize: { xs: '1.1rem', md: '1.3rem' },
+                fontSize: { xs: "1.1rem", md: "1.3rem" },
                 maxWidth: 700,
-                mx: 'auto'
+                mx: "auto",
               }}
             >
-              Professional certifications and continuous learning achievements that validate my expertise
+              Professional certifications and continuous learning achievements
+              that validate my expertise
             </Typography>
           </Box>
         </Fade>
@@ -286,41 +298,44 @@ const Certificates = () => {
                     onMouseEnter={() => setHoveredCard(certificate.id)}
                     onMouseLeave={() => setHoveredCard(null)}
                     sx={{
-                      height: '100%',
+                      height: "100%",
                       borderRadius: 4,
-                      background: 'rgba(255,255,255,0.95)',
-                      backdropFilter: 'blur(20px)',
+                      background: "rgba(255,255,255,0.95)",
+                      backdropFilter: "blur(20px)",
                       border: `1px solid ${theme.palette.divider}30`,
-                      transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                      cursor: 'pointer',
-                      position: 'relative',
-                      overflow: 'hidden',
-                      '&:hover': {
-                        transform: 'translateY(-12px) scale(1.02)',
+                      transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+                      cursor: "pointer",
+                      position: "relative",
+                      overflow: "hidden",
+                      "&:hover": {
+                        transform: "translateY(-12px) scale(1.02)",
                         boxShadow: theme.shadows[20],
-                        '& .cert-image': {
-                          transform: 'scale(1.05)'
+                        "& .cert-image": {
+                          transform: "scale(1.05)",
                         },
-                        '& .cert-overlay': {
-                          opacity: 1
-                        }
+                        "& .cert-overlay": {
+                          opacity: 1,
+                        },
                       },
-                      '&::before': {
+                      "&::before": {
                         content: '""',
-                        position: 'absolute',
+                        position: "absolute",
                         top: 0,
                         left: 0,
                         right: 0,
                         height: 4,
                         background: `linear-gradient(90deg, ${certificate.color}, ${certificate.color}80)`,
-                        transform: hoveredCard === certificate.id ? 'scaleX(1)' : 'scaleX(0)',
-                        transformOrigin: 'left',
-                        transition: 'transform 0.3s ease'
-                      }
+                        transform:
+                          hoveredCard === certificate.id
+                            ? "scaleX(1)"
+                            : "scaleX(0)",
+                        transformOrigin: "left",
+                        transition: "transform 0.3s ease",
+                      },
                     }}
                   >
                     {/* Certificate Image */}
-                    <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+                    <Box sx={{ position: "relative", overflow: "hidden" }}>
                       <CardMedia
                         component="img"
                         height="200"
@@ -328,31 +343,31 @@ const Certificates = () => {
                         alt={certificate.title}
                         className="cert-image"
                         sx={{
-                          transition: 'transform 0.4s ease',
-                          objectFit: 'cover'
+                          transition: "transform 0.4s ease",
+                          objectFit: "cover",
                         }}
                         onError={(e) => {
                           // Fallback if image doesn't exist
-                          e.target.style.display = 'none';
-                          e.target.nextSibling.style.display = 'flex';
+                          e.target.style.display = "none";
+                          e.target.nextSibling.style.display = "flex";
                         }}
                       />
                       {/* Fallback placeholder */}
                       <Box
                         sx={{
-                          display: 'none',
+                          display: "none",
                           height: 200,
                           background: `linear-gradient(135deg, ${certificate.color}20, ${certificate.color}10)`,
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          flexDirection: 'column',
-                          gap: 2
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                          gap: 2,
                         }}
                       >
-                        <LucideIcon 
-                          IconComponent={CategoryIcon} 
-                          size={48} 
-                          color={certificate.color} 
+                        <LucideIcon
+                          IconComponent={CategoryIcon}
+                          size={48}
+                          color={certificate.color}
                         />
                         <Typography variant="h6" color="text.secondary">
                           Certificate Image
@@ -363,17 +378,17 @@ const Certificates = () => {
                       <Box
                         className="cert-overlay"
                         sx={{
-                          position: 'absolute',
+                          position: "absolute",
                           top: 0,
                           left: 0,
                           right: 0,
                           bottom: 0,
-                          background: 'rgba(0,0,0,0.7)',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
+                          background: "rgba(0,0,0,0.7)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
                           opacity: 0,
-                          transition: 'opacity 0.3s ease'
+                          transition: "opacity 0.3s ease",
                         }}
                       >
                         <Button
@@ -382,12 +397,12 @@ const Certificates = () => {
                           startIcon={<Eye size={20} />}
                           onClick={() => handleViewCertificate(certificate)}
                           sx={{
-                            background: 'rgba(255,255,255,0.9)',
-                            color: 'black',
+                            background: "rgba(255,255,255,0.9)",
+                            color: "black",
                             fontWeight: 600,
-                            '&:hover': {
-                              background: 'white'
-                            }
+                            "&:hover": {
+                              background: "white",
+                            },
                           }}
                         >
                           View Certificate
@@ -399,18 +414,25 @@ const Certificates = () => {
                         label={certificate.category}
                         size="small"
                         sx={{
-                          position: 'absolute',
+                          position: "absolute",
                           top: 12,
                           right: 12,
                           background: certificate.color,
-                          color: 'white',
+                          color: "white",
                           fontWeight: 600,
-                          fontSize: '0.75rem'
+                          fontSize: "0.75rem",
                         }}
                       />
                     </Box>
 
-                    <CardContent sx={{ p: 3, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                    <CardContent
+                      sx={{
+                        p: 3,
+                        flexGrow: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
                       {/* Title and Issuer */}
                       <Typography
                         variant="h6"
@@ -418,7 +440,7 @@ const Certificates = () => {
                           fontWeight: 700,
                           color: theme.palette.text.primary,
                           mb: 1,
-                          lineHeight: 1.3
+                          lineHeight: 1.3,
                         }}
                       >
                         {certificate.title}
@@ -429,18 +451,31 @@ const Certificates = () => {
                         sx={{
                           color: certificate.color,
                           fontWeight: 600,
-                          mb: 2
+                          mb: 2,
                         }}
                       >
                         {certificate.issuer}
                       </Typography>
 
                       {/* Date */}
-                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
-                        <Calendar size={16} color={theme.palette.text.secondary} />
+                      <Box
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 1,
+                          mb: 2,
+                        }}
+                      >
+                        <Calendar
+                          size={16}
+                          color={theme.palette.text.secondary}
+                        />
                         <Typography
                           variant="body2"
-                          sx={{ color: theme.palette.text.secondary, fontWeight: 500 }}
+                          sx={{
+                            color: theme.palette.text.secondary,
+                            fontWeight: 500,
+                          }}
                         >
                           {certificate.date}
                         </Typography>
@@ -453,7 +488,7 @@ const Certificates = () => {
                           color: theme.palette.text.secondary,
                           lineHeight: 1.5,
                           mb: 3,
-                          flexGrow: 1
+                          flexGrow: 1,
                         }}
                       >
                         {certificate.description}
@@ -461,29 +496,36 @@ const Certificates = () => {
 
                       {/* Skills */}
                       <Box sx={{ mb: 3 }}>
-                        <Stack direction="row" spacing={1} flexWrap="wrap" gap={1}>
-                          {certificate.skills.slice(0, 3).map((skill, skillIndex) => (
-                            <Chip
-                              key={skillIndex}
-                              label={skill}
-                              size="small"
-                              variant="outlined"
-                              sx={{
-                                fontSize: '0.7rem',
-                                borderColor: `${certificate.color}50`,
-                                color: certificate.color
-                              }}
-                            />
-                          ))}
+                        <Stack
+                          direction="row"
+                          spacing={1}
+                          flexWrap="wrap"
+                          gap={1}
+                        >
+                          {certificate.skills
+                            .slice(0, 3)
+                            .map((skill, skillIndex) => (
+                              <Chip
+                                key={skillIndex}
+                                label={skill}
+                                size="small"
+                                variant="outlined"
+                                sx={{
+                                  fontSize: "0.7rem",
+                                  borderColor: `${certificate.color}50`,
+                                  color: certificate.color,
+                                }}
+                              />
+                            ))}
                           {certificate.skills.length > 3 && (
                             <Chip
                               label={`+${certificate.skills.length - 3}`}
                               size="small"
                               variant="outlined"
                               sx={{
-                                fontSize: '0.7rem',
+                                fontSize: "0.7rem",
                                 borderColor: theme.palette.grey[400],
-                                color: theme.palette.text.secondary
+                                color: theme.palette.text.secondary,
                               }}
                             />
                           )}
@@ -500,28 +542,30 @@ const Certificates = () => {
                           sx={{
                             borderColor: certificate.color,
                             color: certificate.color,
-                            '&:hover': {
+                            "&:hover": {
                               borderColor: certificate.color,
-                              background: `${certificate.color}10`
-                            }
+                              background: `${certificate.color}10`,
+                            },
                           }}
                         >
                           View
                         </Button>
-                        <Button
-                          variant="text"
-                          size="small"
-                          endIcon={<ExternalLink size={14} />}
-                          href={certificate.verificationUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          sx={{
-                            color: theme.palette.text.secondary,
-                            fontSize: '0.75rem'
-                          }}
-                        >
-                          Verify
-                        </Button>
+                        {/* {selectedCertificate.verificationUrl !=null && ( */}
+                          <Button
+                            variant="text"
+                            size="small"
+                            endIcon={<ExternalLink size={14} />}
+                            href={certificate.verificationUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{
+                              color: theme.palette.text.secondary,
+                              fontSize: "0.75rem",
+                            }}
+                          >
+                            Verify
+                          </Button>
+                        {/* )} */}
                       </Stack>
                     </CardContent>
                   </Card>
@@ -540,13 +584,19 @@ const Certificates = () => {
           PaperProps={{
             sx: {
               borderRadius: 3,
-              background: 'rgba(255,255,255,0.95)',
-              backdropFilter: 'blur(20px)'
-            }
+              background: "rgba(255,255,255,0.95)",
+              backdropFilter: "blur(20px)",
+            },
           }}
         >
           <DialogTitle sx={{ pb: 1 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
               <Typography variant="h5" fontWeight={700}>
                 {selectedCertificate?.title}
               </Typography>
@@ -555,44 +605,44 @@ const Certificates = () => {
               </IconButton>
             </Box>
           </DialogTitle>
-          
+
           <DialogContent sx={{ pt: 1 }}>
             {selectedCertificate && (
               <Box>
                 {/* Certificate Image */}
-                <Box sx={{ mb: 3, borderRadius: 2, overflow: 'hidden' }}>
+                <Box sx={{ mb: 3, borderRadius: 2, overflow: "hidden" }}>
                   <img
                     src={selectedCertificate.image}
                     alt={selectedCertificate.title}
                     style={{
-                      width: '100%',
-                      height: 'auto',
+                      width: "100%",
+                      height: "auto",
                       maxHeight: 400,
-                      objectFit: 'contain',
-                      background: `linear-gradient(135deg, ${selectedCertificate.color}20, ${selectedCertificate.color}10)`
+                      objectFit: "contain",
+                      background: `linear-gradient(135deg, ${selectedCertificate.color}20, ${selectedCertificate.color}10)`,
                     }}
                     onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
+                      e.target.style.display = "none";
+                      e.target.nextSibling.style.display = "flex";
                     }}
                   />
                   {/* Fallback */}
                   <Box
                     sx={{
-                      display: 'none',
+                      display: "none",
                       height: 300,
                       background: `linear-gradient(135deg, ${selectedCertificate.color}20, ${selectedCertificate.color}10)`,
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      flexDirection: 'column',
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexDirection: "column",
                       gap: 2,
-                      borderRadius: 2
+                      borderRadius: 2,
                     }}
                   >
-                    <LucideIcon 
-                      IconComponent={Award} 
-                      size={64} 
-                      color={selectedCertificate.color} 
+                    <LucideIcon
+                      IconComponent={Award}
+                      size={64}
+                      color={selectedCertificate.color}
                     />
                     <Typography variant="h6" color="text.secondary">
                       Certificate Preview
@@ -606,11 +656,20 @@ const Certificates = () => {
                     <Typography variant="h6" fontWeight={600} gutterBottom>
                       About This Certificate
                     </Typography>
-                    <Typography variant="body1" color="text.secondary" paragraph>
+                    <Typography
+                      variant="body1"
+                      color="text.secondary"
+                      paragraph
+                    >
                       {selectedCertificate.description}
                     </Typography>
 
-                    <Typography variant="h6" fontWeight={600} gutterBottom sx={{ mt: 3 }}>
+                    <Typography
+                      variant="h6"
+                      fontWeight={600}
+                      gutterBottom
+                      sx={{ mt: 3 }}
+                    >
                       Skills Demonstrated
                     </Typography>
                     <Stack direction="row" spacing={1} flexWrap="wrap" gap={1}>
@@ -622,7 +681,7 @@ const Certificates = () => {
                           sx={{
                             background: `${selectedCertificate.color}20`,
                             color: selectedCertificate.color,
-                            fontWeight: 600
+                            fontWeight: 600,
                           }}
                         />
                       ))}
@@ -649,39 +708,40 @@ const Certificates = () => {
                         </Typography>
                       </Box>
                       {selectedCertificate.credentialId && (
-  <Box mt={2}>
-    <Typography variant="subtitle2" color="text.secondary">
-      Credential ID
-    </Typography>
-    <Typography variant="body1" fontWeight={600}>
-      {selectedCertificate.credentialId}
-    </Typography>
-  </Box>
-)}
-                     
+                        <Box mt={2}>
+                          <Typography
+                            variant="subtitle2"
+                            color="text.secondary"
+                          >
+                            Credential ID
+                          </Typography>
+                          <Typography variant="body1" fontWeight={600}>
+                            {selectedCertificate.credentialId}
+                          </Typography>
+                        </Box>
+                      )}
 
                       <Stack spacing={2}>
-                      {selectedCertificate.verificationUrl && (
-                        <Button
-                        variant="contained"
-                        fullWidth
-                        startIcon={<ExternalLink size={20} />}
-                        href={selectedCertificate.verificationUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        sx={{
-                          background: selectedCertificate.color,
-                          '&:hover': {
-                            background: `${selectedCertificate.color}dd`
-                          }
-                        }}
-                      >
-                        Verify Certificate
-                      </Button>
-                      )}
-                        
-                        
-                        <Button
+                        {selectedCertificate.verificationUrl && (
+                          <Button
+                            variant="contained"
+                            fullWidth
+                            startIcon={<ExternalLink size={20} />}
+                            href={selectedCertificate.verificationUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{
+                              background: selectedCertificate.color,
+                              "&:hover": {
+                                background: `${selectedCertificate.color}dd`,
+                              },
+                            }}
+                          >
+                            Verify Certificate
+                          </Button>
+                        )}
+
+                        {/* <Button
                           variant="outlined"
                           fullWidth
                           startIcon={<Download size={20} />}
@@ -695,7 +755,7 @@ const Certificates = () => {
                           }}
                         >
                           Download Certificate
-                        </Button>
+                        </Button> */}
                       </Stack>
                     </Stack>
                   </Grid>
