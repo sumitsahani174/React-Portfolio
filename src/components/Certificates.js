@@ -51,7 +51,7 @@ const Certificates = () => {
       date: 'June 2025',
       description: '🚀 Completed the Scaler Masterclass on "Learn How to Design Seamless Notification Services" held on 24th June 2025! It was a great session to dive deeper into designing reliable and scalable notification architectures. Big thanks to Scaler and Pragy Agarwal for the insightful session and guidance. 📈 Always excited to learn, grow, and build better systems',
       category: 'System Designing',
-      image: '/certificate/ScalerCertificate.jpeg', // Replace with your actual image path
+      image: `${process.env.PUBLIC_URL}/certificate/ScalerCertificate.jpeg`, // Replace with your actual image path
       //credentialId: 'META-REACT-2023-001',
       skills: ['System Design'],
       // verificationUrl: 'https://coursera.org/verify/your-credential',
@@ -65,7 +65,7 @@ const Certificates = () => {
     //   date: 'October 2023',
     //   description: 'Foundation-level certification demonstrating cloud fluency and foundational AWS knowledge.',
     //   category: 'Cloud Computing',
-    //   image: '/certificates/aws-cert.jpg', // Replace with your actual image path
+    //   image: '/certificate/aws-cert.jpg', // Replace with your actual image path
     //   credentialId: 'AWS-CP-2023-456',
     //   skills: ['AWS', 'Cloud Computing', 'EC2', 'S3'],
     //   verificationUrl: 'https://aws.amazon.com/verification/your-credential',
@@ -78,7 +78,7 @@ const Certificates = () => {
     //   date: 'August 2023',
     //   description: 'Certificate covering fundamental JavaScript concepts, algorithms, and data structure implementations.',
     //   category: 'Programming',
-    //   image: '/certificates/javascript-cert.jpg', // Replace with your actual image path
+    //   image: '/certificate/javascript-cert.jpg', // Replace with your actual image path
     //   credentialId: 'FCC-JS-2023-789',
     //   skills: ['JavaScript', 'Algorithms', 'Data Structures', 'Problem Solving'],
     //   verificationUrl: 'https://freecodecamp.org/certification/your-username/javascript',
@@ -91,7 +91,7 @@ const Certificates = () => {
     //   date: 'June 2023',
     //   description: 'Professional certificate in user experience design, covering design thinking, prototyping, and user research.',
     //   category: 'Design',
-    //   image: '/certificates/ux-cert.jpg', // Replace with your actual image path
+    //   image: '/certificate/ux-cert.jpg', // Replace with your actual image path
     //   credentialId: 'GOOGLE-UX-2023-012',
     //   skills: ['UX Design', 'Figma', 'User Research', 'Prototyping'],
     //   verificationUrl: 'https://coursera.org/verify/professional-cert/your-credential',
@@ -104,7 +104,7 @@ const Certificates = () => {
     //   date: 'April 2023',
     //   description: 'Comprehensive training on MongoDB database design, development, and administration.',
     //   category: 'Database',
-    //   image: '/certificates/mongodb-cert.jpg', // Replace with your actual image path
+    //   image: '/certificate/mongodb-cert.jpg', // Replace with your actual image path
     //   credentialId: 'MONGO-DEV-2023-345',
     //   skills: ['MongoDB', 'NoSQL', 'Database Design', 'Aggregation'],
     //   verificationUrl: 'https://university.mongodb.com/course_completion/your-credential',
@@ -117,7 +117,7 @@ const Certificates = () => {
     //   date: 'February 2023',
     //   description: 'Certification validating skills in containerization, Docker fundamentals, and container orchestration.',
     //   category: 'DevOps',
-    //   image: '/certificates/docker-cert.jpg', // Replace with your actual image path
+    //   image: '/certificate/docker-cert.jpg', // Replace with your actual image path
     //   credentialId: 'DOCKER-DCA-2023-678',
     //   skills: ['Docker', 'Containers', 'DevOps', 'Kubernetes'],
     //   verificationUrl: 'https://credentials.docker.com/your-credential',
