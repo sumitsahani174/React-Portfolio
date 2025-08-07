@@ -14,8 +14,7 @@ import {
   Button,
   Grid,
   Card,
-  CardContent,
-  Chip
+  CardContent
 } from '@mui/material';
 import { 
   Mail, 
@@ -24,7 +23,6 @@ import {
   Github, 
   Globe, 
   MessageCircle, 
-  Twitter, 
   Download,
   Star,
   Sparkles,
@@ -204,7 +202,7 @@ const Contact = () => {
             {contactItems.map((item, index) => {
               const IconComponent = item.icon;
               return (
-                <Grid item xs={12} sm={6} key={index}>
+                <Grid item xs={12} sm={6} md={4} key={index}>
                   <Card
                     elevation={8}
                     onMouseEnter={() => setHoveredCard(`contact-${index}`)}
