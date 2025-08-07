@@ -150,7 +150,7 @@ const About = () => {
                       mb: 1
                     }}
                   >
-                    Senior Full-Stack Developer
+                    Sumit Sahani
                   </Typography>
                   <Typography
                     variant="subtitle1"
@@ -159,7 +159,7 @@ const About = () => {
                       fontWeight: 500
                     }}
                   >
-                    Passionate about creating scalable solutions
+                    Senior Full-Stack Developer
                   </Typography>
                 </Box>
               </Box>
@@ -174,7 +174,7 @@ const About = () => {
                   textAlign: { xs: 'center', sm: 'left' }
                 }}
               >
-                Versatile Full Stack Developer with 6+ years of experience, specializing in .NET Core, Node.js, and React.js for building robust, scalable web applications and RESTful APIs. Proven track record in delivering solutions across healthcare and insurance domains, with strong knowledge of microservices architecture, cloud-native development, and Agile methodologies. Highly adaptable and open to learning new technologies, with a passion for solving complex problems and taking on new challenges in dynamic environments. Committed to writing clean, maintainable code and delivering high-quality products that drive business value.
+                I am Sumit Sahani, a versatile Full Stack Developer with 6+ years of experience, specializing in .NET Core, Node.js, and React.js for building robust, scalable web applications and RESTful APIs. I have a proven track record in delivering solutions across healthcare and insurance domains, with strong knowledge of microservices architecture, cloud-native development, and Agile methodologies. I am highly adaptable and open to learning new technologies, with a passion for solving complex problems and taking on new challenges in dynamic environments. I am committed to writing clean, maintainable code and delivering high-quality products that drive business value.
               </Typography>
 
               <Box sx={{ mb: 4 }}>
