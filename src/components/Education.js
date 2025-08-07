@@ -31,8 +31,8 @@ const Education = () => {
       accentColor: '#667eea'
     },
     {
-      degree: 'HSC - Science Stream',
-      institution: 'V.G. Vaze College, Mumbai',
+      degree: 'HSC - Commerce',
+      institution: 'Swami Ramkrishna Paramhans, Mumbai',
       year: '2013 – 2015',
       level: 'Higher Secondary',
       icon: BookOpen,
@@ -41,7 +41,7 @@ const Education = () => {
     },
     {
       degree: 'SSC',
-      institution: 'Sacred Heart High School, Mumbai',
+      institution: 'Vinay high School, Mumbai',
       year: '2013',
       level: 'Secondary School',
       icon: Award,
